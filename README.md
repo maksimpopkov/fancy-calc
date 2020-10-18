@@ -59,7 +59,14 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
     * Or use the default shortcut - _F5_.
     * Or use the menu bar icon in the "Debug" panel.
 1. Fix the "Multiply" method code according to the TODO comment.
-1. Open the Test Explorer view, and run all "Multiply" unit tests again. All unit tests should be "green" now.
+1. Open the Test Explorer view, and run all "Multiply" unit tests again. "Multiply" unit tests should be "green" now.
+1. Open the Test Explorer view, and run all "Sum" unit tests. Some unit tests should be "red".
+1. Add a breakpoint to the line 30.
+1. Run one of the failed unit tests in the debug mode.
+1. Trace the program execution to find the problem.
+1. Fix the code.
+1. Open the Test Explorer view, and run all "Sum" unit tests. "Sum" unit tests should be "green" now.
+1. Run all unit tests, and make sure all of them are "green".
 
 
 ## Fix Compiler Issues
