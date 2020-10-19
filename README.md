@@ -75,6 +75,8 @@ Additional style and code checks are enabled for the projects in this solution t
 
 If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
 
+Also, you can use [Sonar rule knowledge database](https://rules.sonarsource.com/csharp) for searching more detailed information regarding detected Sonars' issues.
+
 
 ## Save Your Work
 
