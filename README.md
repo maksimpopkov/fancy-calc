@@ -36,7 +36,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 1. Open the Test Explorer view, run all unit tests. All "Plus" unit tests and "Plus_WithOneAndOne_ReturnsTwo" unit test are "green" now.
 1. Inspect "Minus" unit tests in the test list. Only one unit test in "green", the others are "red".
 1. Navigate to the unit test code, and then navigate to the "Minus" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
-1. Fix the "Plus" method code according to the TODO comment.
+1. Fix the "Minus" method code according to the TODO comment.
 1. Open Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests using the right mouse click menu item.
 1. Navigate to the "Multiply" unit test, and then to the "Multiply" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
 1. Add a breakpoint to the line 23.
