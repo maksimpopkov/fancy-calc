@@ -11,7 +11,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 ## Complete the Task
 
 1. [Build the solution](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
-    * Click on menu item - _Build\Build Solution_.
+    * Click on the menu item - _Build\Build Solution_.
     * Or use default keyboard shortcut - _Ctrl+Shift+B_.
 1. Open the [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer) view.
     * Click on menu item - _View\Test Explorer_.
