@@ -11,19 +11,19 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 ## Complete the Task
 
 1. [Build the solution](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
-    * Click on menu item - _Build\Build Solution_.
-    * Or use default keyboard shortcut - _Ctrl+Shift+B_.
+    * Click on the menu item - _Build\Build Solution_.
+    * Or use the default keyboard shortcut - _Ctrl+Shift+B_.
 1. Open the [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer) view.
     * Click on menu item - _View\Test Explorer_.
     * Or use default keyboard shortcut - _Ctrl+E, T_.
-1. Run all unit tests. Almost all unit tests in the Test Explorer should be "red".
-    * Click on menu item - _Test\Run All Tests_.
-    * Or use defaul keyboard shortcut - _Ctrl+R, A_.
+1. Run all unit tests. There are 20 unit tests in the project, at least 15 unit tests in Test Explorer should be "red".
+    * Click on the menu item - _Test\Run All Tests_.
+    * Or use the defaul keyboard shortcut - _Ctrl+R, A_.
 1. Double click on "Plus_WithOneAndOne_ReturnsTwo" unit test. Visual Studio will open the code editor window for [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) file, and will navigate you to the unit test code.
 1. Navigate to "Operations.Plus" method code.
-    * Do the right mouse click on the method name "Plus" in the line 13, and click on "Go to Implementation" menu item.
-    * Or click on the method name "Plus" in the line 13, and use the default shortcut _Ctrl+F12_.
-    * Or click on the method name "Plus" in the line 13 pressing the _Ctrl_ key.
+    * Right click on the method name "Plus" in the line 13, and click on "Go to Implementation" menu item.
+    * Or click on the method name "Plus" in line 13, and use the default shortcut _Ctrl+F12_.
+    * Or click on the method name "Plus" in line 13 pressing the _Ctrl_ key.
 1. Visual Studio will open the editor window for [Operations.cs](FancyCalc/Operations.cs) file, and will navigate you to the method code.
 1. Go to line 10.
     * Use cursor keys.
@@ -37,13 +37,13 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 1. Inspect "Minus" unit tests in the test list. Only one unit test in "green", the others are "red".
 1. Navigate to the unit test code, and then navigate to the "Minus" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
 1. Fix the "Minus" method code according to the TODO comment.
-1. Open Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests using the right mouse click menu item.
+1. Open the Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests right clicking on the menu item.
 1. Navigate to the "Multiply" unit test, and then to the "Multiply" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
-1. Add a breakpoint to the line 23.
-    * Click on the gutter for the line 23.
+1. Add a breakpoint to line 23.
+    * Click on the gutter for line 23.
     * Or use the default shortcut - _F9_.
 1. Open the Test Explorer view, and run the "green" "Multiply(0, 0)" unit test in the debug mode.
-    * Do the right mouse click on the "Minus" unit test, and click on the "Debug" menu item.
+    * Right click on the "Minus" unit test, and click on the "Debug" menu item.
     * Or use the default shortcut - _Ctrl+R, T_.
 1. Trace the program execution.
     * Click on the "Debug\Step Over" menu item.
@@ -61,7 +61,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 1. Fix the "Multiply" method code according to the TODO comment.
 1. Open the Test Explorer view, and run all "Multiply" unit tests again. "Multiply" unit tests should be "green" now.
 1. Open the Test Explorer view, and run all "Sum" unit tests. Some unit tests should be "red".
-1. Add a breakpoint to the line 30.
+1. Add a breakpoint to line 30.
 1. Run one of the failed unit tests in the debug mode.
 1. Trace the program execution to find the problem.
 1. Fix the code.
