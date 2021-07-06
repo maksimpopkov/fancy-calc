@@ -106,7 +106,7 @@ public static int Minus(int x, int y)
     * Click on the gutter for line 23.
     * Or use the default shortcut - _F9_.
 
-![Navigate to Multiply Method](images/add-breakpoint-to-multiply-method.png)
+![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method.png)
 
 18. Open the Test Explorer view, and run the "green" "Multiply(0, 0)" unit test in the debug mode.
     * Right click on the "Minus" unit test, and click on the "Debug" menu item.
@@ -132,10 +132,19 @@ public static int Minus(int x, int y)
 
 ![Stop Debugging](images/stop-debugging.png)
 
-1. Remove the breakpoint on line 23, and add a breakpoint to line 24.
-1. Run the "red" "Multiply(0, 1)" unit test in the debug mode again.
-1. Inspect the "result" variable.
-1. Continue the program execution.
+22. Remove the breakpoint on line 23, and add a breakpoint to line 24.
+
+![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method2.png)
+
+23. Run the "red" "Multiply(0, 1)" unit test in the debug mode again.
+
+![Debug Multiply Unit Test](images/debug-multiply-unit-test2.png)
+
+24. Inspect the "result" variable.
+
+![Inspect Result Variable](images/inspect-multiply-result2.png)
+
+25. Continue the program execution.
     * Click on the "Debug\Continue" menu item.
     * Or use the default shortcut - _F5_.
     * Or use the menu bar icon in the "Debug" panel.

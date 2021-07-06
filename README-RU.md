@@ -105,7 +105,7 @@ public static int Minus(int x, int y)
     * Кликните на вертикальной полосе слева от строки 23.
     * Или используйте клавишу - _F9_.
 
-![Navigate to Multiply Method](images/add-breakpoint-to-multiply-method.png)
+![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method.png)
 
 18. Откройте вкладку Test Explorer и запустите "зеленый" юнит-тест "Multiply(0, 0)" в режиме отладки.
     * Кликните правой кнопкой мыши на юнит-тесте "Minus" и выберите элемент меню "Debug".
@@ -131,10 +131,19 @@ public static int Minus(int x, int y)
 
 ![Stop Debugging](images/stop-debugging.png)
 
-1. Удалите точку останова на строке 23 и добавьте точку останова на строке 24.
-1. Выполните "красный" юнит-тест "Multiply(0, 1)" снова в режиме отладки.
-1. Изучите переменную "result".
-1. Продолжите выполнение программы.
+22. Удалите точку останова на строке 23 и добавьте точку останова на строке 24.
+
+![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method2.png)
+
+23. Выполните "красный" юнит-тест "Multiply(0, 1)" снова в режиме отладки.
+
+![Debug Multiply Unit Test](images/debug-multiply-unit-test2.png)
+
+24. Изучите переменную "result".
+
+![Inspect Result Variable](images/inspect-multiply-result2.png)
+
+25. Продолжите выполнение программы.
     * Кликните на пункте меню "Debug\Continue".
     * Или используйте клавишу - _F5_.
     * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
