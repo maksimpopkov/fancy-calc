@@ -23,14 +23,17 @@
     * Или используйте сочетание клавиш - _Ctrl+R, A_.
 ![Run All Tests](images/run-all-tests.png)
 1. Двойной клик на юнит-тесте "Plus_WithOneAndOne_ReturnsTwo". Visual Studio откроет окно редактора кода для [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) файла и перенаправит вас к коду юнит-теста.
+![Navigate to Unit Test](images/navigate-to-unit-test.png)
 1. Перейдите к коду "Operations.Plus" метода.
     * Нажмите правой кнопкой мыши на имя метода "Plus" на 13 строке и нажмите на элементе меню "Go to Implementation".
     * Или кликните на имени метода "Plus" на 13 строке и используйте сочетание клавиш _Ctrl+F12_.
     * Или кликните на имени метода "Plus" на 13 строке, зажав клавишу _Ctrl_.
+![Navigate to Method](images/navigate-to-method.png)
 1. Visual Studio откроет окно редактора кода для [Operations.cs](FancyCalc/Operations.cs) файла и перенаправит вас к коду метода.
 1. Перейдите на строку 10.
     * Используйте клавиши курсора.
     * Или используйте сочетание клавиш - _Ctrl+G_, нажмите 10 и клавишу _Enter_.
+![Navigate to Method](images/goto-line-10.png)
 1. Раскомментируйте текущую строку.
     * Используйте сочетание клавиш - _Ctrl+K, Ctrl+U_.
 1. Перейдите на следующую строку - строка 11.

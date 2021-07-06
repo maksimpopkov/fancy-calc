@@ -23,14 +23,17 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
     * Or use the defaul keyboard shortcut - _Ctrl+R, A_.
 ![Run All Tests](images/run-all-tests.png)
 1. Double click on "Plus_WithOneAndOne_ReturnsTwo" unit test. Visual Studio will open the code editor window for [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) file, and will navigate you to the unit test code.
+![Navigate to Unit Test](images/navigate-to-unit-test.png)
 1. Navigate to "Operations.Plus" method code.
     * Right click on the method name "Plus" in line 13, and click on "Go to Implementation" menu item.
     * Or click on the method name "Plus" in line 13, and use the default shortcut _Ctrl+F12_.
     * Or click on the method name "Plus" in line 13 pressing the _Ctrl_ key.
+![Navigate to Method](images/navigate-to-method.png)
 1. Visual Studio will open the editor window for [Operations.cs](FancyCalc/Operations.cs) file, and will navigate you to the method code.
 1. Go to line 10.
     * Use cursor keys.
     * Or use the default shortcut - _Ctrl+G_, press 10, and press Enter key.
+![Navigate to Method](images/goto-line-10.png)
 1. Uncomment the current line.
     * Use the default shortcut - _Ctrl+K, Ctrl+U_.
 1. Go to the next line - line 11.
