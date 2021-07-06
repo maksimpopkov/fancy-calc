@@ -192,11 +192,11 @@ public static int Sum(int x1, int x2, int x3)
 
 33. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Сейчас юнит-тесты "Sum" должны быть "зелеными".
 
-![Green Sum Unit Tests](images/red-sum-unit-tests.png)
+![Green Sum Unit Tests](images/green-sum-unit-tests.png)
 
 34. Запустите все юнит-тесты и удостоверьтесь, что все они "зеленые".
 
-![Green Sum Unit Tests](images/red-unit-tests.png)
+![Green Sum Unit Tests](images/green-unit-tests.png)
 
 
 ## Исправьте проблемы компилятора

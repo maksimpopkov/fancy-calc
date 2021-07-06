@@ -193,11 +193,11 @@ public static int Sum(int x1, int x2, int x3)
 
 33. Open the Test Explorer view and run all "Sum" unit tests. "Sum" unit tests should be "green" now.
 
-![Green Sum Unit Tests](images/red-sum-unit-tests.png)
+![Green Sum Unit Tests](images/green-sum-unit-tests.png)
 
 34. Run all unit tests and make sure all of them are "green".
 
-![Green Sum Unit Tests](images/red-unit-tests.png)
+![Green Unit Tests](images/green-unit-tests.png)
 
 
 ## Fix Compiler Issues
