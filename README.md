@@ -34,7 +34,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 
 5. Navigate to "Operations.Plus" method code.
     * Right click on the method name "Plus" in line 13, and click on "Go to Implementation" menu item.
-    * Or click on the method name "Plus" in line 13, and use the default shortcut _Ctrl+F12_.
+    * Or click on the method name "Plus" in line 13, and use the default shortcut _F12_.
     * Or click on the method name "Plus" in line 13 pressing the _Ctrl_ key.
 
 ![Navigate to Method](images/navigate-to-method.png)
