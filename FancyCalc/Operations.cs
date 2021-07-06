@@ -8,7 +8,6 @@ namespace FancyCalc
         {
             // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
             return x + y;
-            //throw new NotImplementedException();
         }
 
         public static int Minus(int x, int y)

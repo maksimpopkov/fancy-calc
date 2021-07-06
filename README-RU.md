@@ -14,7 +14,7 @@
     * Выберите элемент меню - _Build\Build Solution_.
     * Или используйте сочетание клавиш - _Ctrl+Shift+B_.
 
-![Rebuild Solution](images/rebuild-solution.png)
+![Build Solution](images/build-solution.png)
 
 2. Откройте [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer).
     * Выберите элемент меню - _View\Test Explorer_.
@@ -197,6 +197,31 @@ public static int Sum(int x1, int x2, int x3)
 34. Запустите все юнит-тесты и удостоверьтесь, что все они "зеленые".
 
 ![Green Sum Unit Tests](images/green-unit-tests.png)
+
+35. Rebuild the solution.
+    * Click on the menu item - _Build\Rebuild Solution_.
+
+![Rebuild Solution](images/rebuild-solution.png)
+
+36. Open the "Error List" pane. The pane has two warnings.
+    * Click on the "View\Error List" menu item.
+    * Or use the default shortcut - _Ctrl+W, E_.
+
+![Error List with Warnings](images/error-list-with-warnings.png)
+
+37. Remove the line 11.
+
+```cs
+public static int Plus(int x, int y)
+{
+    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    return x + y;
+}
+```
+
+38. Rebuild the solution, and open the "Eror List" pane again. The pane has no warnings now.
+
+![Error List](images/error-list.png)
 
 
 ## Исправьте проблемы компилятора
