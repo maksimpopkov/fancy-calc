@@ -1,4 +1,4 @@
-# Hello, world!
+﻿# Fancy Calculator
 
 Задача начального уровня для практики навыка управления задачами в AutoCode. Переводы: [Английский](README.md).
 
@@ -10,40 +10,92 @@
 
 ## Завершите задачу
 
-1. Откройте вкладку [Solution Explorer](https://docs.microsoft.com/ru-ru/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer).
-    * Выберите элемент меню - _View\Solution Explorer_.
-    * Или используйте сочетание клавиш - _Ctrl+W, S_.
-1. Найдите во вкладке Solution Explorer проекты "HelloWorld" и "HelloWorld.Tests".
-1. Разверните проект "HelloWorld" и найдите в проекте файл [SimpleHelloWorld.cs](HelloWorld/SimpleHelloWorld.cs). Откройте файл в редакторе.
-1. Разверните проект "HelloWorld.Tests" и найдите в проекте файл [SimpleHelloWorldTests.cs](HelloWorld.Tests/SimpleHelloWorldTests.cs). Откройте файл в редакторе.
-1. [Соберите решение](https://docs.microsoft.com/ru-ru/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
+1. [Соберите проект](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
     * Выберите элемент меню - _Build\Build Solution_.
     * Или используйте сочетание клавиш - _Ctrl+Shift+B_.
-1. Откройте вкладку [Error List](https://docs.microsoft.com/ru-ru/visualstudio/ide/find-and-fix-code-errors#review-the-error-list). Убедитесь, что во вкладке нет проблем (ошибок или предупреждений), которые смог обнаружить компилятор C#.
-    * Выберите элемент меню - _View\Error List_.
-    * Или используйте сочетание клавиш - _Ctrl+W, E_.
-1. Откройте вкладку [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer). Все тесты в списке тестов имеют голубую иконку с восклицательным знаком. Это значит, что тесты не были запущены.
+1. Откройте [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer).
     * Выберите элемент меню - _View\Test Explorer_.
     * Или используйте сочетание клавиш - _Ctrl+E, T_.
-1. Выберите элементе "HelloWorld.Tests" в списке тестов, нажмите на нем правой кнопкой мыши и выберите в меню "Run". Все элементы в списке станут "зелеными".
-    * Или используйте сочетание клавиш - _Ctrl+R, T_.
-1. Разверните список, если необходимо. Нажмите правой клавишей на тесте "ReturnHelloWorld" и выберите в меню "Run". Выбранный элемент останется "зеленым".
-    * Или используйте сочетание клави - _Ctrl+R, T_.
-1. Запустите все юнит-тесты.
+1. Запустите все юнит-тесты. Проект содержит 20 юнит тестов, как минимум 15 юнит тестов в Test Explorer должны быть "красными".
     * Выберите элемент меню - _Test\Run All Tests_.
     * Или используйте сочетание клавиш - _Ctrl+R, A_.
+1. Двойной клик на юнит-тесте "Plus_WithOneAndOne_ReturnsTwo". Visual Studio откроет окно редактора кода для [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) файла и перенаправит вас к коду юнит-теста.
+1. Перейдите к коду "Operations.Plus" метода.
+    * Нажмите правой кнопкой мыши на имя метода "Plus" на 13 строке и нажмите на элементе меню "Go to Implementation".
+    * Или кликните на имени метода "Plus" на 13 строке и используйте сочетание клавиш _Ctrl+F12_.
+    * Или кликните на имени метода "Plus" на 13 строке, зажав клавишу _Ctrl_.
+1. Visual Studio откроет окно редактора кода для [Operations.cs](FancyCalc/Operations.cs) файла и перенаправит вас к коду метода.
+1. Перейдите на строку 10.
+    * Используйте клавиши курсора.
+    * Или используйте сочетание клавиш - _Ctrl+G_, нажмите 10 и клавишу _Enter_.
+1. Раскомментируйте текущую строку.
+    * Используйте сочетание клавиш - _Ctrl+K, Ctrl+U_.
+1. Перейдите на следующую строку - строка 11.
+1. Закомментируйте текущую строку.
+    * Используйте сочетание клавиш - _Ctrl+K, Ctrl+C_.
+1. Откройте вкладку Test Explorer, запустите все юнит-тесты. Все "Plus" юнит-тесты и "Plus_WithOneAndOne_ReturnsTwo" юнит-тесты сейчас "зеленые".
+1. Просмотрите "Minus" юнит-тесты в списке тестов. Только один юнит-тест "зеленый", другие - "красные".
+1. Перейдите к коду юнит-теста, а затем перейдите к коду метода "Minus" в файле [Operations.cs](FancyCalc/Operations.cs).
+1. Исправьте код метода "Minus" в соответствии с TODO комментариями.
+1. Откройте вкладку Test Explorer, кликните на строке "Minus (4)" и запустите все юнит-тесты "Minus", используя пункт меню при клике правой кнопки мыши.
+1. Перейдите к юнит-тесту "Multiply", а затем к коду метода "Multiply" в файле [Operations.cs](FancyCalc/Operations.cs).
+1. Добавьте точку останова на строке 23.
+    * Кликните на вертикальной полосе слева от строки 23.
+    * Или используйте клавишу - _F9_.
+1. Откройте вкладку Test Explorer и запустите "зеленый" юнит-тест "Multiply(0, 0)" в режиме отладки.
+    * Кликните правой кнопкой мыши на юнит-тесте "Minus" и выберите элемент меню "Debug".
+    * Или используйте сочетание клавиш - _Ctrl+R, T_.
+1. Отследите выполнение программы.
+    * Кликните на элементе меню "Debug\Step Over".
+    * Или используйте клавишу - _F10_.
+    * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
+1. Изучите переменную "result".
+    * Наведите курсор мыши на переменную "result" на строке 24.
+1. Удалите точку останова на строке 23 и добавьте точку останова на строке 24.
+1. Выполните "красный" юнит-тест "Multiply(0, 1)" снова в режиме отладки.
+1. Изучите переменную "result".
+1. Продолжите выполнение программы.
+    * Кликните на пункте меню "Debug\Continue".
+    * Или используйте клавишу - _F5_.
+    * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
+1. Исправьте код метода "Multiply" в соответствии с TODO комментарием.
+1. Откройте вкладку Test Explorer и запустите снова все юнит-тесты "Multiply". Сейчас юнит-тесты "Multiply" должны быть "зелеными".
+1. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Некоторые юнит-тесты должны быть "красными".
+1. Добавьте точку останова на строке 30.
+1. Запустите один из проваленных юнит-тестов в режиме отладки.
+1. Проследите выполнение программы, чтобы обнаружить проблему.
+1. Исправьте код.
+1. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Сейчас юнит-тесты "Sum" должны быть "зелеными".
+1. Запустите все юнит-тесты и удостоверьтесь, что все они "зеленые".
 
-## Save Your Work
 
-В этом задании нет задач на кодирование. Перейдите на портал AutoCode, откройте страницу задания и нажмите кнопку "Check task".
+## Исправьте проблемы компилятора
 
-Нет необходимости изменять код, делать коммиты и отправлять во внеший репозиторий (его еще называют удаленным).
+Для проектов в этом решении включены дополнительные проверки стиля и кода. Они помогут Вам поддерживать согласованность исходного кода проекта и избегать глупых ошибок. [Просмотрите список ошибок](https://docs.microsoft.com/ru-ru/visualstudio/ide/find-and-fix-code-errors#review-the-error-list) в Visual Studio, чтобы увидеть все предупреждения и ошибки компилятора.
 
-Также вы можете использовать [базу знаний правил Sonar](https://rules.sonarsource.com/csharp) для поиска дополнительной информации об ошибках, которые возникают на этапе проверки задания анализатором Sonar.
+Если текст ошибки или предупреждения компилятора Вам не ясен, [просмотрите подробные сведения об ошибке](https://docs.microsoft.com/ru-ru/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) или введите в поиске google код ошибки или предупреждения, чтобы получить больше информации о проблеме.
+
+Также, вы можете использовать [Базу знаний правил Sonar](https://rules.sonarsource.com/csharp) для поиска более детальной информации касательно обнаруженных предупреждений Sonar.
+
+
+## Сохраните вашу работу
+
+* [Пересоберите решение](https://docs.microsoft.com/ru-ru/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio) в Visual Studio.
+* Проверьте [окно Error List](https://docs.microsoft.com/ru-ru/visualstudio/ide/reference/error-list-window) на ошибки и предупреждения компилятора. Если у вас имеются какие-либо ошибки и предупреждения, **исправьте проблемы** и перекомпилируйте решение снова.
+* [Запустите все юнит-тесты в Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer) и удостоверьтесь, что **нет проваленных юнит-тестов**. Исправьте ваш код, [чтобы сделать все юнит-тесты ЗЕЛЕНЫМИ](https://stackoverflow.com/questions/276813/what-is-red-green-testing).
+* Просмотрите все изменения **до** сохранения вашей работы.
+    * Откройте вкладку "Changes" в [Team Explorer](https://docs.microsoft.com/ru-ru/visualstudio/ide/reference/team-explorer-reference).
+    * Нажмите правой кнопкой мыши на измененном файле.
+    * Нажмите пункт меню "Compare with Unmodified", чтобы открыть окно сравнения.
+* [Подготовьте изменения](https://docs.microsoft.com/ru-ru/azure/devops/repos/git/commits#stage-your-changes) и [создайте коммит](https://docs.microsoft.com/ru-ru/azure/devops/repos/git/commits#create-a-commit).
+* Поделитесь вашими изменениями, [отправив их на удаленный репозиторий](https://docs.microsoft.com/ru-ru/azure/devops/repos/git/pushing).
 
 
 ## Дополнительная информация
 
 * Visual Studio
-  * [Getting Started with Visual Studio 2019](https://www.youtube.com/watch?v=1CgsMtUmVgs)
-  * [Default keyboard shortcuts in Visual Studio](https://docs.microsoft.com/ru-ru/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)
+  * [Знакомство с отладчиком Visual](https://docs.microsoft.com/ru-ru/visualstudio/debugger/debugger-feature-tour)
+  * [Краткое руководство: Отладка кода C# или Visual Basic с помощью отладчика Visual Studio](https://docs.microsoft.com/ru-ru/visualstudio/debugger/quickstart-debug-with-managed)
+  * [Учебник. Сведения об отладке кода C# с помощью Visual Studio](https://docs.microsoft.com/ru-ru/visualstudio/get-started/csharp/tutorial-debugger)
+  * [Переходите по коду с помощью отладчика Visual Studio](https://docs.microsoft.com/ru-ru/visualstudio/debugger/navigating-through-code-with-the-debugger)
+  * [Сочетания клавиш по умолчанию в Visual Studio](https://docs.microsoft.com/ru-ru/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)
