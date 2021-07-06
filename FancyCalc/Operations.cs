@@ -20,7 +20,7 @@ namespace FancyCalc
         public static int Multiply(int x, int y)
         {
             // TODO #3. Add a breakpoint to the next line, run the unit test in the debug mode, and inspect the result during the program execution.
-            int result = x - y;
+            int result = x * y;
             return result;
         }
 
@@ -28,8 +28,7 @@ namespace FancyCalc
         {
             // TODO #4. Add a breakpoint to the next line, run the unit test in the debug mode, and trace the program execution.
             int sum1 = x1 + x2;
-            int sum2 = x2 + x3;
-            int sum = sum1 + sum2;
+            int sum = sum1 + x3;
             return sum;
         }
     }

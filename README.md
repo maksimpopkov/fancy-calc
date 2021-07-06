@@ -148,15 +148,56 @@ public static int Minus(int x, int y)
     * Click on the "Debug\Continue" menu item.
     * Or use the default shortcut - _F5_.
     * Or use the menu bar icon in the "Debug" panel.
-1. Fix the "Multiply" method code according to the TODO comment.
-1. Open the Test Explorer view and run all "Multiply" unit tests again. "Multiply" unit tests should be "green" now.
-1. Open the Test Explorer view and run all "Sum" unit tests. Some unit tests should be "red".
-1. Add a breakpoint to line 30.
-1. Run one of the failed unit tests in the debug mode.
-1. Trace the program execution to find the problem.
-1. Fix the code.
-1. Open the Test Explorer view and run all "Sum" unit tests. "Sum" unit tests should be "green" now.
-1. Run all unit tests and make sure all of them are "green".
+
+![Continue Debugging](images/continue-debugging.png)
+
+26. Fix the "Multiply" method code.
+
+```cs
+public static int Multiply(int x, int y)
+{
+    // TODO #3. Add a breakpoint to the next line, run the unit test in the debug mode, and inspect the result during the program execution.
+    int result = x * y;
+    return result;
+}
+```
+
+27. Open the Test Explorer view and run all "Multiply" unit tests again. "Multiply" unit tests should be "green" now.
+
+![Run Multiply Unit Tests](images/run-multiply-unit-tests.png)
+
+28. Open the Test Explorer view and run all "Sum" unit tests. Some unit tests should be "red".
+
+![Red Sum Unit Tests](images/red-sum-unit-tests.png)
+
+29. Add a breakpoint to line 30.
+
+![Add Breakpoint to Sum Method](images/add-breakpoint-to-sum-method.png)
+
+30. Run one of the failed unit tests in the debug mode.
+
+![Debug Sum Unit Test](images/debug-sum-unit-test.png)
+
+31. Trace the program execution to find the problem.
+32. Fix the code.
+
+```cs
+public static int Sum(int x1, int x2, int x3)
+{
+    // TODO #4. Add a breakpoint to the next line, run the unit test in the debug mode, and trace the program execution.
+    int sum1 = x1 + x2;
+    int sum = sum1 + x3;
+    return sum;
+}
+```
+
+33. Open the Test Explorer view and run all "Sum" unit tests. "Sum" unit tests should be "green" now.
+
+![Green Sum Unit Tests](images/red-sum-unit-tests.png)
+
+34. Run all unit tests and make sure all of them are "green".
+
+![Green Sum Unit Tests](images/red-unit-tests.png)
 
 
 ## Fix Compiler Issues

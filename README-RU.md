@@ -147,15 +147,56 @@ public static int Minus(int x, int y)
     * Кликните на пункте меню "Debug\Continue".
     * Или используйте клавишу - _F5_.
     * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
-1. Исправьте код метода "Multiply" в соответствии с TODO комментарием.
-1. Откройте вкладку Test Explorer и запустите снова все юнит-тесты "Multiply". Сейчас юнит-тесты "Multiply" должны быть "зелеными".
-1. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Некоторые юнит-тесты должны быть "красными".
-1. Добавьте точку останова на строке 30.
-1. Запустите один из проваленных юнит-тестов в режиме отладки.
-1. Проследите выполнение программы, чтобы обнаружить проблему.
-1. Исправьте код.
-1. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Сейчас юнит-тесты "Sum" должны быть "зелеными".
-1. Запустите все юнит-тесты и удостоверьтесь, что все они "зеленые".
+
+![Continue Debugging](images/continue-debugging.png)
+
+26. Исправьте код метода "Multiply".
+
+```cs
+public static int Multiply(int x, int y)
+{
+    // TODO #3. Add a breakpoint to the next line, run the unit test in the debug mode, and inspect the result during the program execution.
+    int result = x * y;
+    return result;
+}
+```
+
+27. Откройте вкладку Test Explorer и запустите снова все юнит-тесты "Multiply". Сейчас юнит-тесты "Multiply" должны быть "зелеными".
+
+![Run Multiply Unit Tests](images/run-multiply-unit-tests.png)
+
+28. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Некоторые юнит-тесты должны быть "красными".
+
+![Red Sum Unit Tests](images/red-sum-unit-tests.png)
+
+29. Добавьте точку останова на строке 30.
+
+![Add Breakpoint to Sum Method](images/add-breakpoint-to-sum-method.png)
+
+30. Запустите один из проваленных юнит-тестов в режиме отладки.
+
+![Debug Sum Unit Test](images/debug-sum-unit-test.png)
+
+31. Проследите выполнение программы, чтобы обнаружить проблему.
+32. Исправьте код.
+
+```cs
+public static int Sum(int x1, int x2, int x3)
+{
+    // TODO #4. Add a breakpoint to the next line, run the unit test in the debug mode, and trace the program execution.
+    int sum1 = x1 + x2;
+    int sum = sum1 + x3;
+    return sum;
+}
+```
+
+33. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Сейчас юнит-тесты "Sum" должны быть "зелеными".
+
+![Green Sum Unit Tests](images/red-sum-unit-tests.png)
+
+34. Запустите все юнит-тесты и удостоверьтесь, что все они "зеленые".
+
+![Green Sum Unit Tests](images/red-unit-tests.png)
 
 
 ## Исправьте проблемы компилятора
