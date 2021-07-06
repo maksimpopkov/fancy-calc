@@ -14,14 +14,18 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
     * Click on the menu item - _Build\Build Solution_.
     * Or use the default keyboard shortcut - _Ctrl+Shift+B_.
 ![Rebuild Solution](images/rebuild-solution.png)
+
 1. Open the [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer) view.
     * Click on the menu item - _View\Test Explorer_.
     * Or use the default keyboard shortcut - _Ctrl+E, T_.
+
 ![Test Explorer](images/test-explorer.png)
 1. Run all unit tests. There are 20 unit tests in the project, at least 15 unit tests in Test Explorer should be "red".
     * Click on the menu item - _Test\Run All Tests_.
     * Or use the defaul keyboard shortcut - _Ctrl+R, A_.
+
 ![Run All Tests](images/run-all-tests.png)
+
 1. Double click on "Plus_WithOneAndOne_ReturnsTwo" unit test. Visual Studio will open the code editor window for [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) file, and will navigate you to the unit test code.
 ![Navigate to Unit Test](images/navigate-to-unit-test.png)
 1. Navigate to "Operations.Plus" method code.

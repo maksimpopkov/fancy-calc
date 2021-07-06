@@ -14,14 +14,18 @@
     * Выберите элемент меню - _Build\Build Solution_.
     * Или используйте сочетание клавиш - _Ctrl+Shift+B_.
 ![Rebuild Solution](images/rebuild-solution.png)
+
 1. Откройте [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer).
     * Выберите элемент меню - _View\Test Explorer_.
     * Или используйте сочетание клавиш - _Ctrl+E, T_.
+
 ![Test Explorer](images/test-explorer.png)
 1. Запустите все юнит-тесты. Проект содержит 20 юнит тестов, как минимум 15 юнит тестов в Test Explorer должны быть "красными".
     * Выберите элемент меню - _Test\Run All Tests_.
     * Или используйте сочетание клавиш - _Ctrl+R, A_.
+
 ![Run All Tests](images/run-all-tests.png)
+
 1. Двойной клик на юнит-тесте "Plus_WithOneAndOne_ReturnsTwo". Visual Studio откроет окно редактора кода для [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) файла и перенаправит вас к коду юнит-теста.
 ![Navigate to Unit Test](images/navigate-to-unit-test.png)
 1. Перейдите к коду "Operations.Plus" метода.
