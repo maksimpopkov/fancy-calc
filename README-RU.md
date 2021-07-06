@@ -33,7 +33,7 @@
 ![Navigate to Unit Test](images/navigate-to-unit-test.png)
 
 5. Перейдите к коду "Operations.Plus" метода.
-    * Нажмите правой кнопкой мыши на имя метода "Plus" на 13 строке и нажмите на элементе меню "Go to Implementation".
+    * Нажмите правой кнопкой мыши на имя метода "Plus" на 13 строке и нажмите на элементе меню "Go to Definition".
     * Или кликните на имени метода "Plus" на 13 строке и используйте сочетание клавиш _F12_.
     * Или кликните на имени метода "Plus" на 13 строке, зажав клавишу _Ctrl_.
 
@@ -93,23 +93,44 @@ public static int Minus(int x, int y)
 }
 ```
 
-15. Откройте вкладку Test Explorer, кликните на строке "Minus (4)" и запустите все юнит-тесты "Minus", используя пункт меню при клике правой кнопки мыши.
+15. Откройте вкладку Test Explorer, кликните на строке "Minus (4)" и запустите все юнит-тесты "Minus", используя пункт меню при клике правой кнопки мыши. Юнит тесты "Minus" должны быть зелеными.
 
 ![Run Minus Unit Tests](images/run-minus-unit-tests.png)
 
-1. Перейдите к юнит-тесту "Multiply", а затем к коду метода "Multiply" в файле [Operations.cs](FancyCalc/Operations.cs).
-1. Добавьте точку останова на строке 23.
+16. Перейдите к юнит-тесту "Multiply", а затем к коду метода "Multiply" в файле [Operations.cs](FancyCalc/Operations.cs).
+
+![Navigate to Multiply Method](images/navigate-to-multiply-method.png)
+
+17. Добавьте точку останова на строке 23.
     * Кликните на вертикальной полосе слева от строки 23.
     * Или используйте клавишу - _F9_.
-1. Откройте вкладку Test Explorer и запустите "зеленый" юнит-тест "Multiply(0, 0)" в режиме отладки.
+
+![Navigate to Multiply Method](images/add-breakpoint-to-multiply-method.png)
+
+18. Откройте вкладку Test Explorer и запустите "зеленый" юнит-тест "Multiply(0, 0)" в режиме отладки.
     * Кликните правой кнопкой мыши на юнит-тесте "Minus" и выберите элемент меню "Debug".
     * Или используйте сочетание клавиш - _Ctrl+R, T_.
-1. Отследите выполнение программы.
+
+![Debug Multiply Unit Test](images/debug-multiply-unit-test.png)
+
+19. Отследите выполнение программы.
     * Кликните на элементе меню "Debug\Step Over".
     * Или используйте клавишу - _F10_.
     * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
-1. Изучите переменную "result".
+
+![Debug Step Over](images/debug-step-over.png)
+
+20. Изучите переменную "result".
     * Наведите курсор мыши на переменную "result" на строке 24.
+
+![Inspect Result Variable](images/inspect-multiply-result.png)
+
+21. Остановите отладку.
+    * Кликните на элементе меню "Debug\Stop Debugging".
+    * Или используйте клавишу - _Shift+F5_.
+
+![Stop Debugging](images/stop-debugging.png)
+
 1. Удалите точку останова на строке 23 и добавьте точку останова на строке 24.
 1. Выполните "красный" юнит-тест "Multiply(0, 1)" снова в режиме отладки.
 1. Изучите переменную "result".

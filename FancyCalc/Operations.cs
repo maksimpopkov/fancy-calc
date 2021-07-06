@@ -14,7 +14,7 @@ namespace FancyCalc
         public static int Minus(int x, int y)
         {
             // TODO #2. Replace "x + y - x" in the next line with "x - y".
-            return x + y;
+            return x - y;
         }
 
         public static int Multiply(int x, int y)

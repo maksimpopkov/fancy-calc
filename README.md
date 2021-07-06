@@ -33,7 +33,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 ![Navigate to Unit Test](images/navigate-to-unit-test.png)
 
 5. Navigate to "Operations.Plus" method code.
-    * Right click on the method name "Plus" in line 13, and click on "Go to Implementation" menu item.
+    * Right click on the method name "Plus" in line 13, and click on "Go to Definition" menu item.
     * Or click on the method name "Plus" in line 13, and use the default shortcut _F12_.
     * Or click on the method name "Plus" in line 13 pressing the _Ctrl_ key.
 
@@ -94,23 +94,44 @@ public static int Minus(int x, int y)
 }
 ```
 
-15. Open the Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests right clicking on the menu item.
+15. Open the Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests right clicking on the menu item. All "Minus" unit tests should be green now.
 
 ![Run Minus Unit Tests](images/run-minus-unit-tests.png)
 
-1. Navigate to the "Multiply" unit test, and then to the "Multiply" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
-1. Add a breakpoint to line 23.
+16. Navigate to the "Multiply" unit test, and then to the "Multiply" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
+
+![Navigate to Multiply Method](images/navigate-to-multiply-method.png)
+
+17. Add a breakpoint to line 23.
     * Click on the gutter for line 23.
     * Or use the default shortcut - _F9_.
-1. Open the Test Explorer view, and run the "green" "Multiply(0, 0)" unit test in the debug mode.
+
+![Navigate to Multiply Method](images/add-breakpoint-to-multiply-method.png)
+
+18. Open the Test Explorer view, and run the "green" "Multiply(0, 0)" unit test in the debug mode.
     * Right click on the "Minus" unit test, and click on the "Debug" menu item.
     * Or use the default shortcut - _Ctrl+R, T_.
-1. Trace the program execution.
+
+![Debug Multiply Unit Test](images/debug-multiply-unit-test.png)
+
+19. Trace the program execution.
     * Click on the "Debug\Step Over" menu item.
     * Or use the default shortcut - _F10_.
     * Or use the menu bar icon in the "Debug" panel.
-1. Inspect the "result" variable.
+
+![Debug Step Over](images/debug-step-over.png)
+
+20. Inspect the "result" variable.
     * Hover the "result" variable name on line 24 with your mouse.
+
+![Inspect Result Variable](images/inspect-multiply-result.png)
+
+21. Stop Debugging.
+    * Click on the "Debug\Stop Debugging" menu item.
+    * Or use the default shortcut - _Shift+F5_.
+
+![Stop Debugging](images/stop-debugging.png)
+
 1. Remove the breakpoint on line 23, and add a breakpoint to line 24.
 1. Run the "red" "Multiply(0, 1)" unit test in the debug mode again.
 1. Inspect the "result" variable.
