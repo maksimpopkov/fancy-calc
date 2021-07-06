@@ -13,41 +13,91 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 1. [Build the solution](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
     * Click on the menu item - _Build\Build Solution_.
     * Or use the default keyboard shortcut - _Ctrl+Shift+B_.
+
 ![Rebuild Solution](images/rebuild-solution.png)
 
-1. Open the [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer) view.
+2. Open the [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer) view.
     * Click on the menu item - _View\Test Explorer_.
     * Or use the default keyboard shortcut - _Ctrl+E, T_.
 
 ![Test Explorer](images/test-explorer.png)
-1. Run all unit tests. There are 20 unit tests in the project, at least 15 unit tests in Test Explorer should be "red".
+
+3. Run all unit tests. There are 20 unit tests in the project, at least 15 unit tests in Test Explorer should be "red".
     * Click on the menu item - _Test\Run All Tests_.
     * Or use the defaul keyboard shortcut - _Ctrl+R, A_.
 
 ![Run All Tests](images/run-all-tests.png)
 
-1. Double click on "Plus_WithOneAndOne_ReturnsTwo" unit test. Visual Studio will open the code editor window for [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) file, and will navigate you to the unit test code.
+4. Double click on "Plus_WithOneAndOne_ReturnsTwo" unit test. Visual Studio will open the code editor window for [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) file, and will navigate you to the unit test code.
+
 ![Navigate to Unit Test](images/navigate-to-unit-test.png)
-1. Navigate to "Operations.Plus" method code.
+
+5. Navigate to "Operations.Plus" method code.
     * Right click on the method name "Plus" in line 13, and click on "Go to Implementation" menu item.
     * Or click on the method name "Plus" in line 13, and use the default shortcut _Ctrl+F12_.
     * Or click on the method name "Plus" in line 13 pressing the _Ctrl_ key.
+
 ![Navigate to Method](images/navigate-to-method.png)
-1. Visual Studio will open the editor window for [Operations.cs](FancyCalc/Operations.cs) file, and will navigate you to the method code.
-1. Go to line 10.
+
+6. Visual Studio will open the editor window for [Operations.cs](FancyCalc/Operations.cs) file, and will navigate you to the method code.
+
+7. Go to line 10.
     * Use cursor keys.
     * Or use the default shortcut - _Ctrl+G_, press 10, and press Enter key.
+
 ![Navigate to Method](images/goto-line-10.png)
-1. Uncomment the current line.
+
+8. Uncomment the current line.
     * Use the default shortcut - _Ctrl+K, Ctrl+U_.
-1. Go to the next line - line 11.
-1. Comment the current line.
+
+```cs
+public static int Plus(int x, int y)
+{
+    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    return x + y;
+    throw new NotImplementedException();
+}
+```
+
+9. Go to the next line - line 11.
+10. Comment the current line.
     * Use the default shortcut - _Ctrl+K, Ctrl+C_.
-1. Open the Test Explorer view, run all unit tests. All "Plus" unit tests and "Plus_WithOneAndOne_ReturnsTwo" unit test are "green" now.
-1. Inspect "Minus" unit tests in the test list. Only one unit test in "green", the others are "red".
-1. Navigate to the unit test code, and then navigate to the "Minus" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
-1. Fix the "Minus" method code according to the TODO comment.
-1. Open the Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests right clicking on the menu item.
+
+```cs
+public static int Plus(int x, int y)
+{
+    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    return x + y;
+    //throw new NotImplementedException();
+}
+```
+
+11. Open the Test Explorer view, run all unit tests. All "Plus" unit tests and "Plus_WithOneAndOne_ReturnsTwo" unit test are "green" now.
+
+![Run All Tests in View](images/run-all-tests-in-view.png)
+
+12. Inspect "Minus" unit tests in the test list. Only one unit test in "green", the others are "red".
+
+![Minus Unit Tests](images/minus-unit-tests.png)
+
+13. Navigate to the unit test code, and then navigate to the "Minus" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
+
+![Navigate to Minus Method](images/navigate-to-minus-method.png)
+
+14. Fix the "Minus" method code according to the TODO comment.
+
+```cs
+public static int Minus(int x, int y)
+{
+    // TODO #2. Replace "x + y - x" in the next line with "x - y".
+    return x + y;
+}
+```
+
+15. Open the Test Explorer view, click on the "Minus (4)" line, and run all "Minus" unit tests right clicking on the menu item.
+
+![Run Minus Unit Tests](images/run-minus-unit-tests.png)
+
 1. Navigate to the "Multiply" unit test, and then to the "Multiply" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
 1. Add a breakpoint to line 23.
     * Click on the gutter for line 23.

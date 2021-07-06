@@ -13,41 +13,90 @@
 1. [Соберите проект](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
     * Выберите элемент меню - _Build\Build Solution_.
     * Или используйте сочетание клавиш - _Ctrl+Shift+B_.
+
 ![Rebuild Solution](images/rebuild-solution.png)
 
-1. Откройте [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer).
+2. Откройте [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer).
     * Выберите элемент меню - _View\Test Explorer_.
     * Или используйте сочетание клавиш - _Ctrl+E, T_.
 
 ![Test Explorer](images/test-explorer.png)
-1. Запустите все юнит-тесты. Проект содержит 20 юнит тестов, как минимум 15 юнит тестов в Test Explorer должны быть "красными".
+
+3. Запустите все юнит-тесты. Проект содержит 20 юнит тестов, как минимум 15 юнит тестов в Test Explorer должны быть "красными".
     * Выберите элемент меню - _Test\Run All Tests_.
     * Или используйте сочетание клавиш - _Ctrl+R, A_.
 
 ![Run All Tests](images/run-all-tests.png)
 
-1. Двойной клик на юнит-тесте "Plus_WithOneAndOne_ReturnsTwo". Visual Studio откроет окно редактора кода для [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) файла и перенаправит вас к коду юнит-теста.
+4. Двойной клик на юнит-тесте "Plus_WithOneAndOne_ReturnsTwo". Visual Studio откроет окно редактора кода для [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) файла и перенаправит вас к коду юнит-теста.
+
 ![Navigate to Unit Test](images/navigate-to-unit-test.png)
-1. Перейдите к коду "Operations.Plus" метода.
+
+5. Перейдите к коду "Operations.Plus" метода.
     * Нажмите правой кнопкой мыши на имя метода "Plus" на 13 строке и нажмите на элементе меню "Go to Implementation".
     * Или кликните на имени метода "Plus" на 13 строке и используйте сочетание клавиш _Ctrl+F12_.
     * Или кликните на имени метода "Plus" на 13 строке, зажав клавишу _Ctrl_.
+
 ![Navigate to Method](images/navigate-to-method.png)
-1. Visual Studio откроет окно редактора кода для [Operations.cs](FancyCalc/Operations.cs) файла и перенаправит вас к коду метода.
+
+6. Visual Studio откроет окно редактора кода для [Operations.cs](FancyCalc/Operations.cs) файла и перенаправит вас к коду метода.
 1. Перейдите на строку 10.
     * Используйте клавиши курсора.
     * Или используйте сочетание клавиш - _Ctrl+G_, нажмите 10 и клавишу _Enter_.
+
 ![Navigate to Method](images/goto-line-10.png)
-1. Раскомментируйте текущую строку.
+
+8. Раскомментируйте текущую строку.
     * Используйте сочетание клавиш - _Ctrl+K, Ctrl+U_.
-1. Перейдите на следующую строку - строка 11.
-1. Закомментируйте текущую строку.
+
+```cs
+public static int Plus(int x, int y)
+{
+    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    return x + y;
+    throw new NotImplementedException();
+}
+```
+
+9. Перейдите на следующую строку - строка 11.
+10. Закомментируйте текущую строку.
     * Используйте сочетание клавиш - _Ctrl+K, Ctrl+C_.
-1. Откройте вкладку Test Explorer, запустите все юнит-тесты. Все "Plus" юнит-тесты и "Plus_WithOneAndOne_ReturnsTwo" юнит-тесты сейчас "зеленые".
-1. Просмотрите "Minus" юнит-тесты в списке тестов. Только один юнит-тест "зеленый", другие - "красные".
-1. Перейдите к коду юнит-теста, а затем перейдите к коду метода "Minus" в файле [Operations.cs](FancyCalc/Operations.cs).
-1. Исправьте код метода "Minus" в соответствии с TODO комментариями.
-1. Откройте вкладку Test Explorer, кликните на строке "Minus (4)" и запустите все юнит-тесты "Minus", используя пункт меню при клике правой кнопки мыши.
+
+```cs
+public static int Plus(int x, int y)
+{
+    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    return x + y;
+    //throw new NotImplementedException();
+}
+```
+
+11. Откройте вкладку Test Explorer, запустите все юнит-тесты. Все "Plus" юнит-тесты и "Plus_WithOneAndOne_ReturnsTwo" юнит-тесты сейчас "зеленые".
+
+![Run All Tests in View](images/run-all-tests-in-view.png)
+
+12. Просмотрите "Minus" юнит-тесты в списке тестов. Только один юнит-тест "зеленый", другие - "красные".
+
+![Minus Unit Tests](images/minus-unit-tests.png)
+
+13. Перейдите к коду юнит-теста, а затем перейдите к коду метода "Minus" в файле [Operations.cs](FancyCalc/Operations.cs).
+
+![Navigate to Minus Method](images/navigate-to-minus-method.png)
+
+14. Исправьте код метода "Minus" в соответствии с TODO комментариями.
+
+```cs
+public static int Minus(int x, int y)
+{
+    // TODO #2. Replace "x + y - x" in the next line with "x - y".
+    return x + y;
+}
+```
+
+15. Откройте вкладку Test Explorer, кликните на строке "Minus (4)" и запустите все юнит-тесты "Minus", используя пункт меню при клике правой кнопки мыши.
+
+![Run Minus Unit Tests](images/run-minus-unit-tests.png)
+
 1. Перейдите к юнит-тесту "Multiply", а затем к коду метода "Multiply" в файле [Operations.cs](FancyCalc/Operations.cs).
 1. Добавьте точку останова на строке 23.
     * Кликните на вертикальной полосе слева от строки 23.
