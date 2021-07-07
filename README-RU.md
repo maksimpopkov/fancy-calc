@@ -16,7 +16,7 @@ We recommed you to install [SonarLint extension for Visual Studio](https://www.s
 
 ![Manage Extensions](images/vs-manage-extensions.png)
 
-2. Search for "SonarLint" extension in the search bar  and download the extension.
+2. Search for "SonarLint" extension in the search bar and download the extension.
 
 ![Extensions Window](images/vs-extensions.png)
 
