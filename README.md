@@ -10,7 +10,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 
 ## SonarLint
 
-We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly in the Visual Studio code editor.
+We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights this issues in the Visual Studio code editor.
 
 1. Open "Extensions" window by clicking on the _Extensions\Manage Extensions_ menu item.
 
@@ -295,6 +295,15 @@ Also, you can use [Sonar rule knowledge database](https://rules.sonarsource.com/
     * Click on "Compare with Unmodified" menu item to open a comparison window.
 * [Stage your changes](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits#stage-your-changes) and [create a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits#create-a-commit).
 * Share your changes by [pushing them to a remote repository](https://docs.microsoft.com/en-us/azure/devops/repos/git/pushing).
+
+
+## Sonar Issues
+
+If you left a comment line with "TODO" word in your code or any commented code lines, you will get Sonar issues during the task check.
+
+![AutoCode Sonar Issues](images/autocode-sonar-issues.png)
+
+To get a higher score fix these issues and start the task check again.
 
 
 ## See also

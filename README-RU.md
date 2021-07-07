@@ -10,7 +10,7 @@
 
 ## SonarLint
 
-We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly in the Visual Studio code editor.
+We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights this issues in the Visual Studio code editor.
 
 1. Open "Extensions" window by clicking on the _Extensions\Manage Extensions_ menu item.
 
@@ -281,6 +281,15 @@ If you leave "TODO" in your code, the Sonar will raise an issue when you will in
 Если текст ошибки или предупреждения компилятора Вам не ясен, [просмотрите подробные сведения об ошибке](https://docs.microsoft.com/ru-ru/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) или введите в поиске google код ошибки или предупреждения, чтобы получить больше информации о проблеме.
 
 Также, вы можете использовать [Базу знаний правил Sonar](https://rules.sonarsource.com/csharp) для поиска более детальной информации касательно обнаруженных предупреждений Sonar.
+
+
+## Sonar Issues
+
+If you left a comment line with "TODO" word in your code or any commented code lines, you will get Sonar issues during the task check.
+
+![AutoCode Sonar Issues](images/autocode-sonar-issues.png)
+
+To get a higher score fix these issues and start the task check again.
 
 
 ## Сохраните вашу работу
