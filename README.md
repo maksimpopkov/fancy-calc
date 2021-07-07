@@ -8,6 +8,31 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 * [Open a project from your remote repository](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo) or [get your local copy](https://docs.microsoft.com/en-us/azure/devops/repos/git/clone#clone-from-another-git-provider) with Visual Studio.
 
 
+## SonarLint
+
+We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly in the Visual Studio code editor.
+
+1. Open "Extensions" window by clicking on the _Extensions\Manage Extensions_ menu item.
+
+![Manage Extensions](images/vs-manage-extensions.png)
+
+2. Search for "SonarLint" extension in the search bar  and download the extension.
+
+![Extensions Window](images/vs-extensions.png)
+
+3. Visual Studio needs restart. Close the application.
+
+![Restart Visual Studio](images/vs-restart.png)
+
+4. An extension installer window will appear. Click on "Modify" button.
+
+![SonarLint Installer](images/sonar-lint-installer.png)
+
+5. When the "SonarLint" extension will be installed, start the application again. Now Visual Studio will highlignt the issues detected by Sonar in the code editor window by wavy underline.
+
+![SonarLint Warnings in Visual Studio](images/vs-warnings.png)
+
+
 ## Complete the Task
 
 1. [Build the solution](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
@@ -219,6 +244,10 @@ public static int Plus(int x, int y)
     return x + y;
 }
 ```
+
+If you leave this comment in your code, the Sonar will raise issues when you will initiate the task check in AutoCode.
+
+![AutoCode Sonar Commented Code Issue](images/autocode-sonar-commented-code.png)
 
 38. Rebuild the solution, and open the "Eror List" pane again. The pane has no warnings now.
 
