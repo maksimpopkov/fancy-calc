@@ -10,27 +10,27 @@
 
 ## SonarLint
 
-We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights this issues in the Visual Studio code editor.
+Рекомендуем установить [расширение SonarLint для Visual Studio](https://www.sonarlint.org/visualstudio). Это расширение очень полезно во время разработки, потому что оно обнаруживает "на лету" проблемы качества и безопасности кода и выделяет их в редакторе кода Visual Studio.
 
-1. Open "Extensions" window by clicking on the _Extensions\Manage Extensions_ menu item.
+1. Откройте окно "Extensions", нажав элемент меню _Extensions\Manage Extensions_.
 
-![Manage Extensions](images/vs-manage-extensions.png)
+![Управление расширениями](images/vs-manage-extensions.png)
 
-2. Search for "SonarLint" extension in the search bar and download the extension.
+2. Найдите расширение "SonarLint" в поисковой строке и скачайте расширение.
 
-![Extensions Window](images/vs-extensions.png)
+![Окно расширений](images/vs-extensions.png)
 
-3. Visual Studio needs restart. Close the application.
+3. Visual Studio следует перезапустить. Закройте приложение.
 
-![Restart Visual Studio](images/vs-restart.png)
+![Перезагрузка Visual Studio](images/vs-restart.png)
 
-4. An extension installer window will appear. Click on "Modify" button.
+4. Появится окно установщика расширений. Нажмите на кнопку "Modify".
 
-![SonarLint Installer](images/sonar-lint-installer.png)
+![Установщик SonarLint](images/sonar-lint-installer.png)
 
-5. When the "SonarLint" extension will be installed, start the application again. Now Visual Studio will highlignt the issues detected by Sonar in the code editor window by wavy underline.
+5. Когда расширение "SonarLint" установится снова запустите приложение. Сейчас Visual Studio будет указывать на проблемы, обнаруженные Sonar в окне редактора кода, подчеркивая проблемные места волнистой линией.
 
-![SonarLint Warnings in Visual Studio](images/vs-warnings.png)
+![Предупреждения SonarLint в Visual Studio](images/vs-warnings.png)
 
 
 ## Завершите задачу
@@ -39,7 +39,7 @@ We recommed you to install [SonarLint extension for Visual Studio](https://www.s
     * Выберите элемент меню - _Build\Build Solution_.
     * Или используйте сочетание клавиш - _Ctrl+Shift+B_.
 
-![Build Solution](images/build-solution.png)
+![Соберите проект](images/build-solution.png)
 
 2. Откройте [Test Explorer](https://docs.microsoft.com/ru-ru/visualstudio/test/run-unit-tests-with-test-explorer).
     * Выберите элемент меню - _View\Test Explorer_.
@@ -51,25 +51,25 @@ We recommed you to install [SonarLint extension for Visual Studio](https://www.s
     * Выберите элемент меню - _Test\Run All Tests_.
     * Или используйте сочетание клавиш - _Ctrl+R, A_.
 
-![Run All Tests](images/run-all-tests.png)
+![Запустите все юнит-тесты](images/run-all-tests.png)
 
 4. Двойной клик на юнит-тесте "Plus_WithOneAndOne_ReturnsTwo". Visual Studio откроет окно редактора кода для [OperationsTests.cs](FancyCalc.Tests/OperationsTests.cs) файла и перенаправит вас к коду юнит-теста.
 
-![Navigate to Unit Test](images/navigate-to-unit-test.png)
+![Перейдите к юнит-тесту](images/navigate-to-unit-test.png)
 
 5. Перейдите к коду "Operations.Plus" метода.
     * Нажмите правой кнопкой мыши на имя метода "Plus" на 13 строке и нажмите на элементе меню "Go to Definition".
     * Или кликните на имени метода "Plus" на 13 строке и используйте сочетание клавиш _F12_.
     * Или кликните на имени метода "Plus" на 13 строке, зажав клавишу _Ctrl_.
 
-![Navigate to Method](images/navigate-to-method.png)
+![Перейдите к методу](images/navigate-to-method.png)
 
 6. Visual Studio откроет окно редактора кода для [Operations.cs](FancyCalc/Operations.cs) файла и перенаправит вас к коду метода.
 1. Перейдите на строку 10.
     * Используйте клавиши курсора.
     * Или используйте сочетание клавиш - _Ctrl+G_, нажмите 10 и клавишу _Enter_.
 
-![Navigate to Method](images/goto-line-10.png)
+![Перейдите к методу](images/goto-line-10.png)
 
 8. Раскомментируйте текущую строку.
     * Используйте сочетание клавиш - _Ctrl+K, Ctrl+U_.
@@ -77,7 +77,7 @@ We recommed you to install [SonarLint extension for Visual Studio](https://www.s
 ```cs
 public static int Plus(int x, int y)
 {
-    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    // TODO #1. Раскомментируйте строку ниже и удалите строку, которая выбрасывает throws NotImplementedException.
     return x + y;
     throw new NotImplementedException();
 }
@@ -90,7 +90,7 @@ public static int Plus(int x, int y)
 ```cs
 public static int Plus(int x, int y)
 {
-    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    // TODO #1. Раскоментируйте линию ниже и удалите строку, которая выбрасывает NotImplementedException.
     return x + y;
     //throw new NotImplementedException();
 }
@@ -98,89 +98,89 @@ public static int Plus(int x, int y)
 
 11. Откройте вкладку Test Explorer, запустите все юнит-тесты. Все "Plus" юнит-тесты и "Plus_WithOneAndOne_ReturnsTwo" юнит-тесты сейчас "зеленые".
 
-![Run All Tests in View](images/run-all-tests-in-view.png)
+![Запустите все тесты](images/run-all-tests-in-view.png)
 
 12. Просмотрите "Minus" юнит-тесты в списке тестов. Только один юнит-тест "зеленый", другие - "красные".
 
-![Minus Unit Tests](images/minus-unit-tests.png)
+![Юнит тесты Minus](images/minus-unit-tests.png)
 
 13. Перейдите к коду юнит-теста, а затем перейдите к коду метода "Minus" в файле [Operations.cs](FancyCalc/Operations.cs).
 
-![Navigate to Minus Method](images/navigate-to-minus-method.png)
+![Перейдите к методу Minus](images/navigate-to-minus-method.png)
 
 14. Исправьте код метода "Minus" в соответствии с TODO комментариями.
 
 ```cs
 public static int Minus(int x, int y)
 {
-    // TODO #2. Replace "x + y - x" in the next line with "x - y".
+    // TODO #2. Замените "x + y - x" на следующей строке следующим "x - y".
     return x + y;
 }
 ```
 
 15. Откройте вкладку Test Explorer, кликните на строке "Minus (4)" и запустите все юнит-тесты "Minus", используя пункт меню при клике правой кнопки мыши. Юнит тесты "Minus" должны быть зелеными.
 
-![Run Minus Unit Tests](images/run-minus-unit-tests.png)
+![Запустите юнит-тесты Minus](images/run-minus-unit-tests.png)
 
 16. Перейдите к юнит-тесту "Multiply", а затем к коду метода "Multiply" в файле [Operations.cs](FancyCalc/Operations.cs).
 
-![Navigate to Multiply Method](images/navigate-to-multiply-method.png)
+![Перейдите к методу Multiply](images/navigate-to-multiply-method.png)
 
 17. Добавьте точку останова на строке 23.
     * Кликните на вертикальной полосе слева от строки 23.
     * Или используйте клавишу - _F9_.
 
-![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method.png)
+![Добавьте точку останова к методу Multiply](images/add-breakpoint-to-multiply-method.png)
 
 18. Откройте вкладку Test Explorer и запустите "зеленый" юнит-тест "Multiply(0, 0)" в режиме отладки.
     * Кликните правой кнопкой мыши на юнит-тесте "Minus" и выберите элемент меню "Debug".
     * Или используйте сочетание клавиш - _Ctrl+R, T_.
 
-![Debug Multiply Unit Test](images/debug-multiply-unit-test.png)
+![Отладка юнит-теста Multiply](images/debug-multiply-unit-test.png)
 
 19. Отследите выполнение программы.
     * Кликните на элементе меню "Debug\Step Over".
     * Или используйте клавишу - _F10_.
     * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
 
-![Debug Step Over](images/debug-step-over.png)
+![Отследите выполнение программы](images/debug-step-over.png)
 
 20. Изучите переменную "result".
     * Наведите курсор мыши на переменную "result" на строке 24.
 
-![Inspect Result Variable](images/inspect-multiply-result.png)
+![Изучите переменную Result](images/inspect-multiply-result.png)
 
 21. Остановите отладку.
     * Кликните на элементе меню "Debug\Stop Debugging".
     * Или используйте клавишу - _Shift+F5_.
 
-![Stop Debugging](images/stop-debugging.png)
+![Остановите отладку](images/stop-debugging.png)
 
 22. Удалите точку останова на строке 23 и добавьте точку останова на строке 24.
 
-![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method2.png)
+![Добавьте точку останова на метод Multiply](images/add-breakpoint-to-multiply-method2.png)
 
 23. Выполните "красный" юнит-тест "Multiply(0, 1)" снова в режиме отладки.
 
-![Debug Multiply Unit Test](images/debug-multiply-unit-test2.png)
+![Выполните юнит-тест Multiply в режиме отладки](images/debug-multiply-unit-test2.png)
 
 24. Изучите переменную "result".
 
-![Inspect Result Variable](images/inspect-multiply-result2.png)
+![Изучите переменную Result](images/inspect-multiply-result2.png)
 
 25. Продолжите выполнение программы.
     * Кликните на пункте меню "Debug\Continue".
     * Или используйте клавишу - _F5_.
     * Или используйте соответствующий пункт меню вкладки "Debug" на панели меню.
 
-![Continue Debugging](images/continue-debugging.png)
+![Продолжите отладку](images/continue-debugging.png)
 
 26. Исправьте код метода "Multiply".
 
 ```cs
 public static int Multiply(int x, int y)
 {
-    // TODO #3. Add a breakpoint to the next line, run the unit test in the debug mode, and inspect the result during the program execution.
+    // TODO #3. Добавьте точку останова на следующую строку, запустите юнит-тест в режиме отладки и изучите переменную result во время выполнения.
     int result = x * y;
     return result;
 }
@@ -188,19 +188,19 @@ public static int Multiply(int x, int y)
 
 27. Откройте вкладку Test Explorer и запустите снова все юнит-тесты "Multiply". Сейчас юнит-тесты "Multiply" должны быть "зелеными".
 
-![Run Multiply Unit Tests](images/run-multiply-unit-tests.png)
+![Запустите юнит-тесты Multiply](images/run-multiply-unit-tests.png)
 
 28. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Некоторые юнит-тесты должны быть "красными".
 
-![Red Sum Unit Tests](images/red-sum-unit-tests.png)
+![Красные юнит-тесты](images/red-sum-unit-tests.png)
 
 29. Добавьте точку останова на строке 30.
 
-![Add Breakpoint to Sum Method](images/add-breakpoint-to-sum-method.png)
+![Добавьте точку останова на метод Sum](images/add-breakpoint-to-sum-method.png)
 
 30. Запустите один из проваленных юнит-тестов в режиме отладки.
 
-![Debug Sum Unit Test](images/debug-sum-unit-test.png)
+![Запустите юнит-тест](images/debug-sum-unit-test.png)
 
 31. Проследите выполнение программы, чтобы обнаружить проблему.
 32. Исправьте код.
@@ -208,7 +208,7 @@ public static int Multiply(int x, int y)
 ```cs
 public static int Sum(int x1, int x2, int x3)
 {
-    // TODO #4. Add a breakpoint to the next line, run the unit test in the debug mode, and trace the program execution.
+    // TODO #4. Добавьте точку останова на следующую строку, запустите юнит-тест в режиме отладки и изучите выполнение программы.
     int sum1 = x1 + x2;
     int sum = sum1 + x3;
     return sum;
@@ -217,50 +217,50 @@ public static int Sum(int x1, int x2, int x3)
 
 33. Откройте вкладку Test Explorer и запустите все юнит-тесты "Sum". Сейчас юнит-тесты "Sum" должны быть "зелеными".
 
-![Green Sum Unit Tests](images/green-sum-unit-tests.png)
+![Зеленые юнит-тесты](images/green-sum-unit-tests.png)
 
 34. Запустите все юнит-тесты и удостоверьтесь, что все они "зеленые".
 
-![Green Sum Unit Tests](images/green-unit-tests.png)
+![Зеленые юнит-тесты](images/green-unit-tests.png)
 
-35. Rebuild the solution.
-    * Click on the menu item - _Build\Rebuild Solution_.
+35. Перекомпилируйте решение.
+    * Нажмите на пункт меню - _Build\Rebuild Solution_.
 
-![Rebuild Solution](images/rebuild-solution.png)
+![Перекомпилируйте решение](images/rebuild-solution.png)
 
-36. Open the "Error List" pane. The pane has two warnings.
-    * Click on the "View\Error List" menu item.
-    * Or use the default shortcut - _Ctrl+W, E_.
+36. Откройте панель "Error List". Панель содержит два предупреждения.
+    * Нажмите на пункт меню "View\Error List".
+    * Или используйте сочетание клавиш - _Ctrl+W, E_.
 
-![Error List with Warnings](images/error-list-with-warnings.png)
+![Error List с предупреждениями](images/error-list-with-warnings.png)
 
-37. Remove the line 11.
+37. Удалите строку 11.
 
 ```cs
 public static int Plus(int x, int y)
 {
-    // TODO #1. Uncomment the line below and remove the line that throws NotImplementedException.
+    // TODO #1. Раскомментируйте строку ниже и удалите строку, которая выбрасывает NotImplementedException.
     return x + y;
 }
 ```
 
-If you leave this comment in your code, the Sonar will raise issues when you will initiate the task check in AutoCode.
+Если вы оставите этот комментарий в вашем коде, то Sonar вызовет проблемы, когда вы запустите проверку задачи в AutoCode.
 
-![AutoCode Sonar Commented Code Issue](images/autocode-sonar-commented-code.png)
+![Проблема Sonar на AutoCode](images/autocode-sonar-commented-code.png)
 
-38. Rebuild the solution, and open the "Eror List" pane again. The pane has no warnings now.
+38. Перекомпилируйте решение и откройте пунель "Eror List" снова. Сейчас панель не имеет предупреждений.
 
 ![Error List](images/error-list.png)
 
-39. If you have SonarLint extension installed in your Visual Studio, the Visual Studio will mark a "TODO" word in the code editor window with a wavy underline. This is the warning generated by [S1135 rule](https://rules.sonarsource.com/csharp/RSPEC-1135).
+39. Если у вас в Visual Studio установлено расширение, Visual Studio подчеркнет волнистой линией слово "TODO" в окне редактора. Это предупреждение сгенерировано [правилом S1135](https://rules.sonarsource.com/csharp/RSPEC-1135).
 
 ![Error List](images/sonar-todo-warning.png)
 
-The rule description says:
+Описание правила указывает:
 
-_TODO tags are commonly used to mark places where some more code is required, but which the developer wants to implement later. Sometimes the developer will not have the time or will simply forget to get back to that tag. This rule is meant to track those tags and to ensure that they do not go unnoticed._
+_TODO Теги обычно используются для обозначения мест, где требуется еще немного кода, но который разработчик хочет реализовать позже. Иногда у разработчика не будет времени или он просто забудет вернуться к этому тегу. Это правило предназначено для отслеживания этих тегов и обеспечения того, чтобы они не остались незамеченными._
 
-40. Remove all comment lines with "TODO" word to fix the issues.
+40. Удалите все строки комментариев со словом "TODO", чтобы устранить проблемы.
 
 ```cs
 public static int Plus(int x, int y)
@@ -269,9 +269,9 @@ public static int Plus(int x, int y)
 }
 ```
 
-If you leave "TODO" in your code, the Sonar will raise an issue when you will initiate the task check in AutoCode.
+Если вы оставите комментарий TODO в вашем коде, то Sonar вызовет проблемы, когда вы запустите проверку задачи в AutoCode.
 
-![AutoCode Sonar TODO Issue](images/autocode-sonar-todo.png)
+![Проблема Sonar на AutoCode](images/autocode-sonar-todo.png)
 
 
 ## Исправьте проблемы компилятора
@@ -283,13 +283,13 @@ If you leave "TODO" in your code, the Sonar will raise an issue when you will in
 Также, вы можете использовать [Базу знаний правил Sonar](https://rules.sonarsource.com/csharp) для поиска более детальной информации касательно обнаруженных предупреждений Sonar.
 
 
-## Sonar Issues
+## Проблемы Sonar
 
-If you left a comment line with "TODO" word in your code or any commented code lines, you will get Sonar issues during the task check.
+Если вы оставите строку с комментарием "TODO" или любые закомментированные строки кода, у вас возникнут проблемы с Sonar во время проверки задачи.
 
-![AutoCode Sonar Issues](images/autocode-sonar-issues.png)
+![Проблемы с Sonar на AutoCode](images/autocode-sonar-issues.png)
 
-To get a higher score fix these issues and start check the task again.
+Чтобы получить более высокую оценку устраните эти проблемы и снова запустите проверку задачи.
 
 
 ## Сохраните вашу работу
