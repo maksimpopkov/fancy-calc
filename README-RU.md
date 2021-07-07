@@ -289,7 +289,7 @@ If you left a comment line with "TODO" word in your code or any commented code l
 
 ![AutoCode Sonar Issues](images/autocode-sonar-issues.png)
 
-To get a higher score fix these issues and start the task check again.
+To get a higher score fix these issues and start check the task again.
 
 
 ## Сохраните вашу работу
