@@ -10,7 +10,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 
 ## SonarLint
 
-We recommend you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights this issues in the Visual Studio code editor.
+We recommend you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights these issues in the Visual Studio code editor.
 
 1. Open "Extensions" window by clicking on the _Extensions\Manage Extensions_ menu item.
 
@@ -101,11 +101,11 @@ public static int Plus(int x, int y)
 
 ![Run All Tests in View](images/run-all-tests-in-view.png)
 
-12. Inspect "Minus" unit tests in the test list. Only one unit test in "green", the others are "red".
+12. Inspect "Minus" unit tests in the test list. Only one unit test should be "green", the others — "red".
 
 ![Minus Unit Tests](images/minus-unit-tests.png)
 
-13. Navigate to the unit test code, and then navigate to the "Minus" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
+13. Navigate to the unit test code and then navigate to the "Minus" method code in the [Operations.cs](FancyCalc/Operations.cs) file.
 
 ![Navigate to Minus Method](images/navigate-to-minus-method.png)
 
@@ -235,7 +235,7 @@ public static int Sum(int x1, int x2, int x3)
 
 ![Error List with Warnings](images/error-list-with-warnings.png)
 
-37. Remove the line 11.
+37. Remove line 11.
 
 ```cs
 public static int Plus(int x, int y)
@@ -249,7 +249,7 @@ If you leave this comment in your code, the Sonar will raise issues when you wil
 
 ![AutoCode Sonar Commented Code Issue](images/autocode-sonar-commented-code.png)
 
-38. Rebuild the solution, and open the "Eror List" pane again. The pane has no warnings now.
+38. Rebuild the solution and open the "Eror List" pane again. The pane has no warnings now.
 
 ![Error List](images/error-list.png)
 
@@ -277,7 +277,7 @@ If you leave "TODO" in your code, the Sonar will raise an issue when you will in
 
 ## Fix Compiler Issues
 
-Additional style and code checks are enabled for the projects in this solution to help you maintaining consistency of the project source code and avoiding silly mistakes. [Review the Error List](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-the-error-list) in Visual Studio to see all compiler warnings and errors.
+Additional style and code checks are enabled for the projects in this solution to help you maintain consistency of the project source code and avoid silly mistakes. [Review the Error List](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-the-error-list) in Visual Studio to see all compiler warnings and errors.
 
 If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
 
@@ -303,7 +303,7 @@ If you left a comment line with "TODO" word in your code or any commented code l
 
 ![AutoCode Sonar Issues](images/autocode-sonar-issues.png)
 
-To get a higher score fix these issues and start check the task again.
+To get a higher score, fix these issues and start check the task again.
 
 
 ## See also
