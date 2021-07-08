@@ -10,7 +10,7 @@ This is a beginner level task for practicing AutoCode tasks management. Translat
 
 ## SonarLint
 
-We recommed you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights this issues in the Visual Studio code editor.
+We recommend you to install [SonarLint extension for Visual Studio](https://www.sonarlint.org/visualstudio). This extension is very useful during the development because it detects code quality and code security issues on the fly and highlights this issues in the Visual Studio code editor.
 
 1. Open "Extensions" window by clicking on the _Extensions\Manage Extensions_ menu item.
 
