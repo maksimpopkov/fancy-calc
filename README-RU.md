@@ -133,7 +133,7 @@ public static int Minus(int x, int y)
 ![Добавьте точку останова к методу Multiply](images/add-breakpoint-to-multiply-method.png)
 
 18. Откройте вкладку Test Explorer и запустите "зеленый" юнит-тест "Multiply(0, 0)" в режиме отладки.
-    * Кликните правой кнопкой мыши на юнит-тесте "Minus" и выберите элемент меню "Debug".
+    * Кликните правой кнопкой мыши на юнит-тесте "Multiply" и выберите элемент меню "Debug".
     * Или используйте сочетание клавиш - _Ctrl+R, T_.
 
 ![Отладка юнит-теста Multiply](images/debug-multiply-unit-test.png)
