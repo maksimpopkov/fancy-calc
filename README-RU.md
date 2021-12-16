@@ -1,4 +1,4 @@
-﻿# Fancy Calculator
+# Fancy Calculator
 
 Задача начального уровня для практики навыка управления задачами в AutoCode. Переводы: [Английский](README.md).
 
@@ -114,7 +114,7 @@ public static int Plus(int x, int y)
 public static int Minus(int x, int y)
 {
     // TODO #2. Замените "x + y - x" на следующей строке следующим "x - y".
-    return x + y;
+    return x - y;
 }
 ```
 

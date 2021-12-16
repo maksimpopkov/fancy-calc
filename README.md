@@ -115,7 +115,7 @@ public static int Plus(int x, int y)
 public static int Minus(int x, int y)
 {
     // TODO #2. Replace "x + y - x" in the next line with "x - y".
-    return x + y;
+    return x - y;
 }
 ```
 
