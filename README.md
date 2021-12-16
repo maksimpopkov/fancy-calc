@@ -134,7 +134,7 @@ public static int Minus(int x, int y)
 ![Add Breakpoint to Multiply Method](images/add-breakpoint-to-multiply-method.png)
 
 18. Open the Test Explorer view, and run the "green" "Multiply(0, 0)" unit test in the debug mode.
-    * Right click on the "Minus" unit test, and click on the "Debug" menu item.
+    * Right click on the "Multiply" unit test, and click on the "Debug" menu item.
     * Or use the default shortcut - _Ctrl+R, T_.
 
 ![Debug Multiply Unit Test](images/debug-multiply-unit-test.png)
